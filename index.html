@@ -1,25 +1,164 @@
 <!DOCTYPE html>
 <html lang='en'>
+
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Page Title</title>
+    <title>Prática Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
     <link rel='stylesheet' href='styles.css'>
 </head>
-<body>
-    <main class="container">
-        <h1>Laboratório de CSS Grid</h1>
 
-        <section class="grade">
-            <article class="item item-destaque">Item 1</article>
-            <article class="item">Item 2</article>
-            <article class="item">Item 3</article>
-            <article class="item">Item 4</article>
-            <article class="item">Item 5</article>
-            <article class="item">Item 6</article>
-            <article class="item">Item 7</article>
-            <article class="item">Item 8</article>
+<body>
+    <header class="bg-primary text-white py-5">
+        <div class="container">
+            <p class="text-uppercase fw-semibold mb-2">Padrôes Web</p>
+            <h1 class="display-5 fw-bold mb-3">Semana de Integração Web</h1>
+            <p class="lead mb-0">Uma programação prática para consolidar HTML, CSS, Bootstrap, GitHub e projeto
+                integrador.</p>
+
+            <div class="d-flex flex-wrap gap-2 mt-4">
+                <a class="btn btn-light btn-lg" href="#programacao"> Ver programação </a>
+                <a class="btn btn-outline-light btn-lg" href="#criterios"> Critério técnicos</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-5" id="criterios">
+            <div class="container">
+                <div class="row g-4 align-items-start">
+                    <div class="col-12 col-lg-5">
+                        <p class="text-primary fw-semibold text-uppercase mb-2">
+                            Uso critico
+                        </p>
+
+                        <h2 id="titulo-criterios" class="h1 mb-3">
+                            Framework não substitui projeto
+                        </h2>
+
+                        <p class="mb-0">
+                            Bootstrap acelera a montagem da interface, mas a qualidade continua dependendo de
+                            semântica, conteúdo, hierarquia, acessibilidade, responsividade e decisões autorais.
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-lg-7">
+                        <div class="row g-3">
+                            <article class="col-12 col-md-6">
+                                <div class="h-100 border rounded-3 p-4 shadow-sm">
+                                    <span class="etapa-numero">1</span>
+                                    <h3 class="h5 mt-3">Semântica</h3>
+                                    <p class="mb-0">Use landmarks, títulos em ordem lógica e links com sentido.</p>
+                                </div>
+                            </article>
+
+
+                            <article class="col-12 col-md-6">
+                                <div class="h-100 border rounded-3 p-4 shadow-sm">
+                                    <span class="etapa-numero">2</span>
+                                    <h3 class="h5 mt-3">Responsividade</h3>
+                                    <p class="mb-0">Teste a página em diferentes larguras e revise quebras do grid.</p>
+                                </div>
+                            </article>
+
+
+                            <article class="col-12 col-md-6">
+                                <div class="h-100 border rounded-3 p-4 shadow-sm"''>
+                                    <span class="etapa-numero">3</span>
+                                    <h3 class="h5 mt-3">Autoria</h3>
+                                    <p class="mb-0">Complemente o framework com decisões visuais próprias.</p>
+                                </div>
+                            </article>
+
+
+                            <article class="col-12 col-md-6">
+                                <div class="h-100 border rounded-3 p-4 shadow-sm">
+                                    <span class="etapa-numero">4</span>
+                                    <h3 class="h5 mt-3">Versionamento</h3>
+                                    <p class="mb-0">Registre cada avanço em commits claros no GitHub.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-    </main>    
+
+        <section class="bg-light py-5" id="programacao">
+            <div class="container">
+                <div class="d-flex flex-column flex-md-row gap-3 justify-content-between align-items-md-end mb-4">
+                    <div>
+                        <p class="text-primary fw-semibold text-uppercase mb-2">Programação</p>
+                        <h2 id="titulo-programacao" class="h1 mb-0">Trilhas da semana</h2>
+                    </div>
+
+                    <a href="#resumo" class="btn btn-primary">Ver resumo</a>
+                </div>
+
+                <div class="row g-4">
+                    <article class="col-12 col-md-6 col-xl-4">
+                        <div class="h-100 bg-white border rounded-3 p-4 shadow-sm">
+                            <p class="text-secondary fw-semibold mb-2">Trilha 1</p>
+                            <h3 class="h4">HTML e conteúdo</h3>
+                            <p>Revisão de semântica, navegação, tabelas, formulários e organização textual.</p>
+                            <span class="badge text-bg-primary">Base técnica</span>
+                        </div>
+                    </article>
+
+                    <article class="col-12 col-md-6 col-xl-4">
+                        <div class="h-100 bg-white border rounded-3 p-4 shadow-sm">
+                            <p class="text-secondary fw-semibold mb-2">Trilha 2</p>
+                            <h3 class="h4">CSS e Responsividade</h3>
+                            <p>Grid, estados interativos, media queries e refinamento visual em telas reais.</p>
+                            <span class="badge text-bg-primary">Interface</span>
+                        </div>
+                    </article>
+
+
+                    <article class="col-12 col-md-6 col-xl-4">
+                        <div class="h-100 bg-white border rounded-3 p-4 shadow-sm">
+                            <p class="text-secondary fw-semibold mb-2">Trilha 3</p>
+                            <h3 class="h4">Bootstrap Aplicado</h3>
+                            <p>Uso de containers, grid, utilitários e componentes com CSS autoral.</p>
+                            <span class="badge text-bg-primary">Framework</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5" id="resumo">
+            <div class="container">
+                <h2 id="titulo-resumo" class="visually-hidden"> Resumo da Programação </h2>
+
+                <div class="row g-4">
+                    <div class="col-12 col-md-4">
+                        <p class="display-6 fw-bold text-primary mb-0">3</p>
+                        <p class="mb-0">Trilhas de Estudo</p>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <p class="display-6 fw-bold text-primary mb-0">5</p>
+                        <p class="mb-0">Práticas Orientadas</p>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <p class="display-6 fw-bold text-primary mb-0">1</p>
+                        <p class="mb-0">Projeto Final</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-top py-4 bg-dark text-white">
+        <div class="container d-flex flex-column flex-md-row gap-2 justify-content-between">
+            <p class="mb-0">Disciplina de Padrões Web</p>
+            <p class="mb-0">IFRN Campus Currais Novos</p>
+        </div>
+    </footer>
 </body>
+
 </html>
